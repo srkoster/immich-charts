@@ -16,6 +16,7 @@ controllers:
           # Add the env vars to connect to your database here.
 
 immich:
+  strategy: RollingUpdate
   metrics:
     # Enabling this will create the service monitors needed to monitor immich with the prometheus operator
     enabled: false
