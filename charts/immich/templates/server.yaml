@@ -11,7 +11,7 @@ defaultPodOptions:
 controllers:
   main:
     type: deployment
-    strategy: RollingUpdate
+    strategy: {{ .Values.immich.strategy }} 
     containers:
       main:
         env:
